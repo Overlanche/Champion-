@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://logos-world.net/wp-content/uploads/2021/08/Champion-Logo.png" />
+        <!--Задаем иконку в адресной строке сайта.-->
+    <title>Champion</title>
+    <!-- Bootstrap CSS (Cloudflare CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- jQuery (Cloudflare CDN) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap Bundle JS (Cloudflare CDN) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"
+        integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Подключаем библиотеку bootstrap для создания эффекта карусели-->
+    <script>
+        $(function () {
+            $('#carousel').carousel({
+                interval: 4000,
+                keyboard: false,
+                pause: 'hover',
+                ride: 'carousel',
+                wrap: false
+            });
+        });
+        $('#carousel').on('slide.bs.carousel', function (e) {
+            direction = screenLeft
+        });
+    </script>
+    <!--Прописываем атрибуты карусели и запускаем ее-->
+    <link rel="stylesheet" type="text/css" href="..\css\style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo"
+            src="https://logos-world.net/wp-content/uploads/2021/08/Champion-Logo.png"></a>
+        <div id="menu">
+            <a href="story.html" class="menu-link">
+                <div>
+                    <h2>История предприятия</h2>
+                </div>
+            </a>
+            <a href="contacts.html" class="menu-link">
+                <div>
+                    <h2>Контакты</h2>
+                </div>
+            </a>
+            <a href="about.html" class="menu-link">
+                <div>
+                    <h2>О нас</h2>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="transparent"><!--Затемняем картинку с помощью полупрозрачного блока-->
+            <div class="text-main">
+                <h1>Наша компания - Champion</h1>
+                <p>Занимается строительством уже 50 лет. Обращайтесь к нам по всем вопросам недвижимости, а также можете инвестировать в нашу компанию и получать часть прибыли!</p>
+                <p>Наши контакты и местоположение вы найдете ниже на сайте.</p>
+            </div>
+        </div>
+        <div class="image-main"><img style="width: calc(100vw); height: calc(88vh); z-index: -1;"
+                src="https://u-stena.ru/upload/iblock/2a7/2a742e3ef7b21bd7f667f4bc23f9a4fc.jpg">
+        </div>
+        <div class="map-text">
+            <h1>Местоположение</h1>
+        </div>
+                <!--Подключаем на сайт Яндекс Карту-->
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/spetsstroy/104427083000/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Спецстрой</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/industrial_facilities_construction/184107619/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Промышленное строительство в Челябинске</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU6RBCxCA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative; width: calc(100vw); height: calc(74.2vh)"></iframe></div>
+        <div class="map-text">
+            <h1>Фотоальбом</h1>
+        </div>
+        <div class="food-menu">
+            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel"><!--Далее идет код карусели-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img class="img-fluid"
+                                src="https://kartinkin.net/uploads/posts/2021-04/1617591827_6-p-stroitelstvo-fon-6.jpg"
+                                alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img class="img-fluid"
+                                src="https://klike.net/uploads/posts/2022-09/1663150063_g-1.jpg"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img class="img-fluid"
+                                src="https://oir.mobi/uploads/posts/2021-03/1616983433_11-p-stroika-fon-11.jpg" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img class="img-fluid"
+                                src="https://oir.mobi/uploads/posts/2021-03/thumbs/1616983521_61-p-stroika-fon-64.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div><img width="70%" src="..\img\logo2.png" alt=""></div>
+        <div class="footer-menu">
+            <a href="#">
+                <div>
+                    <h1>Компания</h1>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <h1>Карьера</h1>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <h1>Мы рядом</h1>
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <h1>Контакты</h1>
+                </div>
+            </a>
+        </div>
+        <div>
+            <p>© 1968 ООО «Champion»</p>
+        </div>
+    </footer>
+</body>
+
+</html>
